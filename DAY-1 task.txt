@@ -3,22 +3,22 @@ http-Hyper Text Transfer Protocol
 HTTP1.1:
 -> It supports connection reuse and for every TCP connection there could be multiple 
 requests and responses.
--> pipelining where the client can request several resources from the server at once.
+-> The pipelining where the client can request several resources from the server at once.
 -> HTTP1.1 provided support for chunk transfers that allowed streaming of content 
 dynamically as chunks and for additional headers to be sent after the message body.
--> It is relatively secure since it uses digest authentication, NTLM authentication.
--> Expands on the caching support by using additional headers like cache-control, 
+-> It is secure since it uses digest authentication, NTLM authentication.
+-> Expands on the caching support by using additional headers such as cache-control, 
 conditional headers like If-Match and by using entity tags.
 
 HTTP2:
 -> Uses multiplexing, where over a single TCP connection resources to be delivered 
 are interleaved and arrive at the client almost at the same time.
-->  It also provides a feature called server push that allows the server to send 
-data that the client will need but has not yet requested.
+->  It also provides a feature called server push,which allows the server to send 
+data that the client will need.
 -> Underlying semantics of HTTP such as headers, status codes remains the same.
--> HTTP2 does not change much in terms of caching. The server push feature if the 
+-> It doesn't change much in terms of caching. The server push feature if the 
 client finds the resources are already present in the cache.
--> HTTP2 utilizes multiplexing and server push to effectively reduce the page load 
+-> HTTP2 will utilizes multiplexing and push server to effectively reduce the page load 
 time by a greater margin along with being less sensitive to network delays.
 
 
