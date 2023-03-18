@@ -1,0 +1,36 @@
+For a given JSON iterate over all for loops(for, for in, for of, forEach).
+
+for loop
+var a=[{ "name":"siddhardh", "age":26, "id":1224},{ "name":"rajini", "age":67, "id":1212},{ "name":"kamal", "age":65, "id":1107}];
+for(let i=0;i<a.length;i++)
+{
+    var txt=a[i];
+    console.log(txt.name+" "+txt.age+" "+txt.id);
+}
+output:
+siddhardh 26 1224
+rajini 67 1212
+kamal 65 1107
+
+for in
+var a=[{ "name":"siddhardh", "age":26, "id":1224},{ "name":"rajini", "age":67, "id":1212},{ "name":"kamal", "age":65, "id":1107}];
+for(let i in a)
+{
+    var txt=a[i];
+    console.log(txt.name+" "+txt.age+" "+txt.id);
+}
+output:
+{ "name": "siddhardh", "age": 26, "id": 1224}
+{ "name": "rajini", "age": 67, "id": 1212}
+{ "name": "kamal", "age": 65, "id": 1107}
+
+for of
+var a=[{ "name":"siddhardh", "age":26, "id":1224},{ "name":"rajini", "age":67, "id":1212},{ "name":"kamal", "age":65, "id":1107}];
+for(let i of a)
+{
+    console.log(i);
+}
+output:
+{ "name": "siddhardh", "age": 26, "id": 1224}
+{ "name": "rajini", "age": 67, "id": 1212}
+{ "name": "kamal", "age": 65, "id": 1107}
